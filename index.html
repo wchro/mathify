@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Mathify - Calculator app</title>
     <link rel="stylesheet" href="static/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <script src="static/scripts/script.js"></script>
   </head>
   <body>
     <header>
@@ -19,7 +21,7 @@
     </header>
     <main class="container">
       <div class="calculator">
-        <input type="text" placeholder="1 * 2" class="screen" disabled />
+        <input type="text" placeholder="0" class="screen" disabled />
         <div class="options">
           <div class="special">C</div>
           <div class="special">+/-</div>
@@ -38,12 +40,13 @@
           <div class="number">3</div>
           <div class="operator">+</div>
           <div class="number">0</div>
-          <div class="number">,</div>
+          <div class="number">.</div>
           <div class="special">H</div>
           <div class="operator">=</div>
         </div>
       </div>
     </main>
-    <footer>Developed by Dito to practice</footer>
+    <footer>Developed by Dito for practice</footer>
+    <script src="static/scripts/script.js"></script>
   </body>
 </html>
