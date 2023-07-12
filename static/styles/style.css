@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #155263;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  color: #f9f9f9;
+  font-size: 50px;
+  text-shadow: 1px 1px 50px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 30vw;
+  height: 80vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffc93c;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.screen {
+  height: 70px;
+  border: none;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.number:hover {
+  background-color: #fbbf29;
+}
+
+.number:active {
+  background-color: #deaa00;
+}
+
+.special {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9234;
+  color: white;
+}
+
+.special:hover {
+  background-color: #fb8722;
+}
+
+.special:active {
+  background-color: #f17407;
+}
+
+.operator {
+  display: flex;
+  background-color: #f03861;
+  align-items: center;
+  justify-content: center;
+}
+
+.operator:hover {
+  background-color: #ed2651;
+}
+
+.operator:active {
+  background-color: #ce0e38;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .container {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  color: white;
+}
