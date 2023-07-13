@@ -102,6 +102,61 @@ header {
   background-color: #ce0e38;
 }
 
+.history {
+  display: none;
+  position: fixed;
+  background-color: #f8f8f8;
+  width: 200px;
+  height: 80%;
+  align-items: flex-start;
+  box-shadow: 1px 1px 1px 10000px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 5px 10px 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal-content {
+  padding: 15px 10px;
+}
+
+.close-modal {
+  border: none;
+  background-color: #ce0e38;
+  color: #fefefe;
+  border-radius: 3px;
+  padding: 10px 20px 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.modal-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.modal-content ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content li {
+  font-size: 35px;
+  /* color: rgb(138, 138, 138); */
+}
+
+.modal-content li:nth-child(even) {
+  background-color: rgba(208, 208, 208, 0.5);
+}
+/* .modal-content li:nth-child(odd) {
+  background-color: gray;
+} */
+
 @media screen and (max-width: 1250px) {
   .container {
     width: 35vw;
