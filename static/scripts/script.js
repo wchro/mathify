@@ -66,7 +66,7 @@ const setOp = (n) => {
 
 const showModal = () => {
   const history = JSON.parse(localStorage.getItem("history"));
-  if (history.items) {
+  if (history.items.length > 0) {
     historyItems.innerHTML = history.items
       .reverse()
       .map((item) => `<li>${item}</li>`)
